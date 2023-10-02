@@ -263,7 +263,7 @@ char* write_regular(TreeNode* root) {
         char* right = write_regular(root->right);
 
         if (root->negative) {
-            sprintf(str, "(-(%s %c %s))", left, root->oper, right);
+            sprintf(str, "-(%s %c %s)", left, root->oper, right);
         }
         else {
             char op = root->oper;
