@@ -4,7 +4,7 @@ int main(int argc, char* argv []) {
     char input[LEN_MAX];
     int size = 0;
     char* output = NULL;
-    printf("Введите выражение:\n");
+    printf("Введите выражение вида: -a * (-b) / (-c) \n");
     fgets(input, LEN_MAX, stdin);
     size = strlen(input);
     Stack* stack = read_expression(input, size);
